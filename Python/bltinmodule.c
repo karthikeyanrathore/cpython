@@ -2054,7 +2054,7 @@ builtin_print_impl(PyObject *module, PyObject *args, PyObject *sep,
     }
     else if (sep && !PyUnicode_Check(sep)) {
         PyErr_Format(PyExc_TypeError,
-                     "sep must be None or a string, not %.200s",
+                     "sep must be None or a string for e.g: -, not %.200s",
                      Py_TYPE(sep)->tp_name);
         return NULL;
     }
